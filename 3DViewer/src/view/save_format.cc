@@ -21,7 +21,7 @@ void View::SaveImage_() {
   if (frames_ == 50) {
     timer_->stop();
     QString pathGIF = QFileDialog::getSaveFileName(
-        this, ("Save as GIF"), "image.gif_", "GIF Image Files (*.gif)");
+        this, ("Save as GIF"), "image.gif", "GIF Image Files (*.gif)");
     gif_->save(pathGIF);
     delete timer_;
     delete gif_;
